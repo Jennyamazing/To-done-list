@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.progress-container {
+    width: 100%;
+    background-color: #f4f2f2;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #8459d4;
+    width: 0%; /* 初始宽度为0 */
+    transition: width 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+.container {
+    background:linear-gradient(hsl(13,100%,64%), hsl(322,87%,55%) );
+    margin-bottom: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(219, 245, 76, 0.1);
+    width: 500px;
+    text-align: center;
+    overflow: hidden;
+}
+.task-container {
+    width: 500px;  /* 设定固定宽度 */
+    height: 200px; /* 设定固定高度 */
+    overflow-y: auto; /* 让任务列表在框内滚动 */
+    border: 1px solid #d45959;
+    border-radius: 4px;
+    padding: 10px;
+    position:absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 让框居中 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.17);
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#taskList li {
+    padding: 10px;
+    background: rgba(218, 193, 196, 0.913);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#taskList li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.info-section {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #242121;
+}
+
+.input-section {
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+input[type="text"], input[type="time"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #8459d4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #133c5988;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px;
+}
+
+li {
+    padding: 5px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #f1e9eb;
+    background-color: #e9ecef;
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+li button {
+    background-color: #773f2a;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #d1616c;
+}
